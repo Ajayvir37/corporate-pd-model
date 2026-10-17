@@ -1,0 +1,65 @@
+variable,stage,reason,iv,definition
+Attr21,Selected,kept through all stages,2.111069564454608,sales (n) / sales (n-1)
+Attr27,Selected,kept through all stages,1.7234989739658146,profit on operating activities / financial expenses
+Attr46,Selected,kept through all stages,0.8938042666099306,(current assets - inventory) / short-term liabilities
+Attr38,Selected,kept through all stages,0.6937245973404031,constant capital / total assets
+Attr59,1. IV filter,IV < 0.02,0.012689964731025473,long-term liabilities / equity
+Attr13,2. Correlation filter,|corr| 0.88 > 0.7 with Attr26 (higher IV),1.2877086390526489,(gross profit + depreciation) / sales
+Attr16,2. Correlation filter,|corr| 0.98 > 0.7 with Attr26 (higher IV),1.2855914224635379,(gross profit + depreciation) / total liabilities
+Attr35,2. Correlation filter,|corr| 0.92 > 0.7 with Attr39 (higher IV),1.273460687344139,profit on sales / total assets
+Attr42,2. Correlation filter,|corr| 0.73 > 0.7 with Attr27 (higher IV),1.2481040846959108,profit on operating activities / sales
+Attr45,2. Correlation filter,|corr| 0.79 > 0.7 with Attr26 (higher IV),1.231232110995367,net profit / inventory
+Attr22,2. Correlation filter,|corr| 0.73 > 0.7 with Attr27 (higher IV),1.2194195155735108,profit on operating activities / total assets
+Attr1,2. Correlation filter,|corr| 0.86 > 0.7 with Attr26 (higher IV),1.1569756000822047,net profit / total assets
+Attr19,2. Correlation filter,|corr| 0.85 > 0.7 with Attr26 (higher IV),1.154065157031403,gross profit / sales
+Attr23,2. Correlation filter,|corr| 0.86 > 0.7 with Attr26 (higher IV),1.1456820591530126,net profit / sales
+Attr12,2. Correlation filter,|corr| 0.87 > 0.7 with Attr26 (higher IV),1.1407314577689127,gross profit / short-term liabilities
+Attr14,2. Correlation filter,|corr| 0.85 > 0.7 with Attr26 (higher IV),1.1347889150094086,(gross profit + interest) / total assets
+Attr18,2. Correlation filter,|corr| 0.85 > 0.7 with Attr26 (higher IV),1.1347889150094086,gross profit / total assets
+Attr7,2. Correlation filter,|corr| 0.85 > 0.7 with Attr26 (higher IV),1.1345912276388792,EBIT / total assets
+Attr31,2. Correlation filter,|corr| 0.84 > 0.7 with Attr26 (higher IV),1.1223709323345528,(gross profit + interest) / sales
+Attr11,2. Correlation filter,|corr| 0.79 > 0.7 with Attr26 (higher IV),1.0816654437608166,(gross profit + extraordinary items + financial expenses) / total assets
+Attr56,2. Correlation filter,|corr| 0.85 > 0.7 with Attr39 (higher IV),0.7765649191658323,(sales - cost of products sold) / sales
+Attr4,2. Correlation filter,|corr| 0.76 > 0.7 with Attr46 (higher IV),0.7300255977271856,current assets / short-term liabilities
+Attr28,2. Correlation filter,|corr| 0.75 > 0.7 with Attr55 (higher IV),0.729946308185199,working capital / fixed assets
+Attr58,2. Correlation filter,|corr| 0.71 > 0.7 with Attr39 (higher IV),0.7277396473116893,total costs /total sales
+Attr8,2. Correlation filter,|corr| 0.76 > 0.7 with Attr25 (higher IV),0.689849999593126,book value of equity / total liabilities
+Attr49,2. Correlation filter,|corr| 0.71 > 0.7 with Attr39 (higher IV),0.6888261879939449,EBITDA (profit on operating activities - depreciation) / sales
+Attr3,2. Correlation filter,|corr| 0.72 > 0.7 with Attr46 (higher IV),0.6887887925180662,working capital / total assets
+Attr17,2. Correlation filter,|corr| 0.77 > 0.7 with Attr25 (higher IV),0.6648722685944226,total assets / total liabilities
+Attr51,2. Correlation filter,|corr| 0.92 > 0.7 with Attr38 (higher IV),0.6569847920719287,short-term liabilities / total assets
+Attr10,2. Correlation filter,|corr| 0.77 > 0.7 with Attr25 (higher IV),0.6564588900164285,equity / total assets
+Attr2,2. Correlation filter,|corr| 0.77 > 0.7 with Attr25 (higher IV),0.648058045154482,total liabilities / total assets
+Attr53,2. Correlation filter,|corr| 0.83 > 0.7 with Attr54 (higher IV),0.6338167262445347,equity / fixed assets
+Attr62,2. Correlation filter,|corr| 0.98 > 0.7 with Attr63 (higher IV),0.5851036306645327,(short-term liabilities *365) / sales
+Attr5,2. Correlation filter,|corr| 0.79 > 0.7 with Attr46 (higher IV),0.5434929877089718,[(cash + short-term securities + receivables - short-term liabilities) / (operating expenses - depreciation)] * 365
+Attr30,2. Correlation filter,|corr| 0.77 > 0.7 with Attr63 (higher IV),0.4792177307012846,(total liabilities - cash) / sales
+Attr32,2. Correlation filter,|corr| 0.89 > 0.7 with Attr63 (higher IV),0.4099927097263037,(current liabilities * 365) / cost of products sold
+Attr52,2. Correlation filter,|corr| 0.86 > 0.7 with Attr63 (higher IV),0.3483638265526288,(short-term liabilities * 365) / cost of products sold)
+Attr33,2. Correlation filter,|corr| 0.89 > 0.7 with Attr63 (higher IV),0.32816852253418477,operating expenses / short-term liabilities
+Attr61,2. Correlation filter,|corr| 0.99 > 0.7 with Attr44 (higher IV),0.09207904626656227,sales / receivables
+Attr26,4. Stepwise regression,not selected: wrong sign / insignificant / no improvement,1.316316447156319,(net profit + depreciation) / total liabilities
+Attr39,4. Stepwise regression,not selected: wrong sign / insignificant / no improvement,1.297229702843102,profit on sales / sales
+Attr41,4. Stepwise regression,not selected: wrong sign / insignificant / no improvement,1.132243616716953,total liabilities / ((profit on operating activities + depreciation) * (12/365))
+Attr25,4. Stepwise regression,not selected: wrong sign / insignificant / no improvement,0.958325573136696,(equity - share capital) / total assets
+Attr15,4. Stepwise regression,not selected: wrong sign / insignificant / no improvement,0.8907795503101057,(total liabilities * 365) / (gross profit + depreciation)
+Attr55,4. Stepwise regression,not selected: wrong sign / insignificant / no improvement,0.878556062409365,working capital
+Attr6,4. Stepwise regression,not selected: wrong sign / insignificant / no improvement,0.8205186786788528,retained earnings / total assets
+Attr24,4. Stepwise regression,not selected: wrong sign / insignificant / no improvement,0.8033410843012265,gross profit (in 3 years) / total assets
+Attr54,4. Stepwise regression,not selected: wrong sign / insignificant / no improvement,0.7787821944780733,constant capital / fixed assets
+Attr48,4. Stepwise regression,not selected: wrong sign / insignificant / no improvement,0.7031635711997046,EBITDA (profit on operating activities - depreciation) / total assets
+Attr63,4. Stepwise regression,not selected: wrong sign / insignificant / no improvement,0.5981937864783625,sales / short-term liabilities
+Attr57,4. Stepwise regression,not selected: wrong sign / insignificant / no improvement,0.5623213596556085,(current assets - inventory - short-term liabilities) / (sales - gross profit - depreciation)
+Attr50,4. Stepwise regression,not selected: wrong sign / insignificant / no improvement,0.5438580969141218,current assets / total liabilities
+n_missing_ratios,4. Stepwise regression,not selected: wrong sign / insignificant / no improvement,0.462150316837783,number of the 64 ratios missing for the firm (data-quality signal)
+Attr40,4. Stepwise regression,not selected: wrong sign / insignificant / no improvement,0.45061506092392256,(current assets - inventory - receivables) / short-term liabilities
+Attr29,4. Stepwise regression,not selected: wrong sign / insignificant / no improvement,0.31217538914406806,logarithm of total assets
+Attr9,4. Stepwise regression,not selected: wrong sign / insignificant / no improvement,0.18003592077706393,sales / total assets
+Attr60,4. Stepwise regression,not selected: wrong sign / insignificant / no improvement,0.12296131108969605,sales / inventory
+Attr44,4. Stepwise regression,not selected: wrong sign / insignificant / no improvement,0.09993422331438354,(receivables * 365) / sales
+Attr43,4. Stepwise regression,not selected: wrong sign / insignificant / no improvement,0.07754271463477455,rotation receivables + inventory turnover in days
+Attr47,4. Stepwise regression,not selected: wrong sign / insignificant / no improvement,0.07531255524662119,(inventory * 365) / cost of products sold
+Attr64,4. Stepwise regression,not selected: wrong sign / insignificant / no improvement,0.058748419021212805,sales / fixed assets
+Attr20,4. Stepwise regression,not selected: wrong sign / insignificant / no improvement,0.05624268477197669,(inventory * 365) / sales
+Attr36,4. Stepwise regression,not selected: wrong sign / insignificant / no improvement,0.047380115024887974,total sales / total assets
+Attr34,4. Stepwise regression,not selected: wrong sign / insignificant / no improvement,0.045930670400169384,operating expenses / total liabilities

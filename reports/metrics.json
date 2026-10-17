@@ -1,0 +1,169 @@
+{
+  "data": {
+    "firms": 5910,
+    "train": 4137,
+    "test": 1773,
+    "defaults": 410,
+    "default_rate": 0.06937394247038917,
+    "candidates": 64,
+    "dropped_missing": [
+      "Attr37"
+    ]
+  },
+  "selection": {
+    "stage_counts": {
+      "candidates": 64,
+      "after IV filter": 63,
+      "after correlation filter": 29,
+      "after VIF filter": 29,
+      "final model": 4
+    },
+    "selected": [
+      "Attr21",
+      "Attr27",
+      "Attr46",
+      "Attr38"
+    ]
+  },
+  "performance": {
+    "train": {
+      "n": 4137,
+      "defaults": 287,
+      "default_rate": 0.06937394247038917,
+      "mean_pd": 0.0693739424703892,
+      "auc": 0.9097651477442419,
+      "gini": 0.8195302954884838,
+      "gini_ci_95": [
+        0.7745055545614454,
+        0.8552853979108554
+      ],
+      "ks": 0.6898764649984162,
+      "brier": 0.03974929324369755,
+      "hosmer_lemeshow": 12.360204138198448,
+      "hosmer_lemeshow_p": 0.13584151046552018,
+      "binomial_p_portfolio": 0.5087012812970136
+    },
+    "test": {
+      "n": 1773,
+      "defaults": 123,
+      "default_rate": 0.06937394247038917,
+      "mean_pd": 0.07152087333945022,
+      "auc": 0.9240995319044101,
+      "gini": 0.8481990638088202,
+      "gini_ci_95": [
+        0.7948489296708382,
+        0.8928101980619453
+      ],
+      "ks": 0.7049223946784923,
+      "brier": 0.037609674371333335,
+      "hosmer_lemeshow": 4.616503776964804,
+      "hosmer_lemeshow_p": 0.7976672767301236,
+      "binomial_p_portfolio": 0.6501506460851552
+    },
+    "xgboost_test": {
+      "auc": 0.9577285045577728,
+      "gini": 0.9154570091155456,
+      "ks": 0.782690317812269,
+      "gini_train": 0.9946839223494275
+    },
+    "sensitivity_test_excl_missing_attr21": {
+      "n": 1736,
+      "gini": 0.7906277581641659
+    }
+  },
+  "master_scale": {
+    "monotonic_train": true,
+    "monotonic_test": true,
+    "bounds": [
+      0.0065,
+      0.01,
+      0.015,
+      0.03,
+      0.06,
+      0.15,
+      0.35
+    ]
+  },
+  "monitoring": [
+    {
+      "quarter": "Q1",
+      "risk_tilt": 0.0,
+      "feature_noise": 0.0,
+      "dr_uplift": 1.0,
+      "n_firms": 1773,
+      "defaults": 128,
+      "observed_dr": 0.07219402143260012,
+      "mean_pd": 0.07390510905768966,
+      "psi": 0.013592110851009209,
+      "max_csi": 0.008262549333319005,
+      "max_csi_variable": "Attr38",
+      "gini": 0.8747625379939208,
+      "gini_relative_drop": -0.03131750000503173,
+      "binomial_p": 0.621397976076786,
+      "psi_rag": "Green",
+      "gini_rag": "Green",
+      "calibration_rag": "Green",
+      "overall_rag": "Green"
+    },
+    {
+      "quarter": "Q2",
+      "risk_tilt": 0.12,
+      "feature_noise": 0.1,
+      "dr_uplift": 1.15,
+      "n_firms": 1773,
+      "defaults": 176,
+      "observed_dr": 0.09926677946982515,
+      "mean_pd": 0.09317922398823418,
+      "psi": 0.045157577499706815,
+      "max_csi": 0.07387381510349934,
+      "max_csi_variable": "Attr27",
+      "gini": 0.8620709284453807,
+      "gini_relative_drop": -0.016354491803220367,
+      "binomial_p": 0.19925654368109186,
+      "psi_rag": "Green",
+      "gini_rag": "Green",
+      "calibration_rag": "Green",
+      "overall_rag": "Green"
+    },
+    {
+      "quarter": "Q3",
+      "risk_tilt": 0.25,
+      "feature_noise": 0.35,
+      "dr_uplift": 1.4,
+      "n_firms": 1773,
+      "defaults": 250,
+      "observed_dr": 0.1410039481105471,
+      "mean_pd": 0.12379700402950312,
+      "psi": 0.19865529030348647,
+      "max_csi": 0.18529192495022584,
+      "max_csi_variable": "Attr27",
+      "gini": 0.788499015101773,
+      "gini_relative_drop": 0.07038447842534196,
+      "binomial_p": 0.016476781439002063,
+      "psi_rag": "Amber",
+      "gini_rag": "Amber",
+      "calibration_rag": "Amber",
+      "overall_rag": "Amber"
+    },
+    {
+      "quarter": "Q4",
+      "risk_tilt": 0.4,
+      "feature_noise": 0.7,
+      "dr_uplift": 2.0,
+      "n_firms": 1773,
+      "defaults": 419,
+      "observed_dr": 0.23632261703327692,
+      "mean_pd": 0.1897048090453913,
+      "psi": 0.566896907801371,
+      "max_csi": 0.4088381038266296,
+      "max_csi_variable": "Attr27",
+      "gini": 0.7692878521343989,
+      "gini_relative_drop": 0.09303383491143238,
+      "binomial_p": 6.398046036155272e-07,
+      "psi_rag": "Red",
+      "gini_rag": "Amber",
+      "calibration_rag": "Red",
+      "overall_rag": "Red"
+    }
+  ]
+}

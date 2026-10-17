@@ -1,0 +1,65 @@
+variable,iv,n_bins,strength,definition
+Attr21,2.111069564454608,7,very strong (check),sales (n) / sales (n-1)
+Attr27,1.7234989739658146,3,very strong (check),profit on operating activities / financial expenses
+Attr26,1.316316447156319,7,very strong (check),(net profit + depreciation) / total liabilities
+Attr39,1.297229702843102,5,very strong (check),profit on sales / sales
+Attr13,1.2877086390526489,6,very strong (check),(gross profit + depreciation) / sales
+Attr16,1.2855914224635379,8,very strong (check),(gross profit + depreciation) / total liabilities
+Attr35,1.273460687344139,4,very strong (check),profit on sales / total assets
+Attr42,1.2481040846959108,4,very strong (check),profit on operating activities / sales
+Attr45,1.231232110995367,7,very strong (check),net profit / inventory
+Attr22,1.2194195155735108,4,very strong (check),profit on operating activities / total assets
+Attr1,1.1569756000822047,5,very strong (check),net profit / total assets
+Attr19,1.154065157031403,7,very strong (check),gross profit / sales
+Attr23,1.1456820591530126,7,very strong (check),net profit / sales
+Attr12,1.1407314577689127,7,very strong (check),gross profit / short-term liabilities
+Attr14,1.1347889150094086,5,very strong (check),(gross profit + interest) / total assets
+Attr18,1.1347889150094086,5,very strong (check),gross profit / total assets
+Attr7,1.1345912276388792,5,very strong (check),EBIT / total assets
+Attr41,1.132243616716953,3,very strong (check),total liabilities / ((profit on operating activities + depreciation) * (12/365))
+Attr31,1.1223709323345528,6,very strong (check),(gross profit + interest) / sales
+Attr11,1.0816654437608166,4,very strong (check),(gross profit + extraordinary items + financial expenses) / total assets
+Attr25,0.958325573136696,8,very strong (check),(equity - share capital) / total assets
+Attr46,0.8938042666099306,6,very strong (check),(current assets - inventory) / short-term liabilities
+Attr15,0.8907795503101057,3,very strong (check),(total liabilities * 365) / (gross profit + depreciation)
+Attr55,0.878556062409365,7,very strong (check),working capital
+Attr6,0.8205186786788528,5,very strong (check),retained earnings / total assets
+Attr24,0.8033410843012265,5,very strong (check),gross profit (in 3 years) / total assets
+Attr54,0.7787821944780733,4,very strong (check),constant capital / fixed assets
+Attr56,0.7765649191658323,5,very strong (check),(sales - cost of products sold) / sales
+Attr4,0.7300255977271856,6,very strong (check),current assets / short-term liabilities
+Attr28,0.729946308185199,4,very strong (check),working capital / fixed assets
+Attr58,0.7277396473116893,5,very strong (check),total costs /total sales
+Attr48,0.7031635711997046,5,very strong (check),EBITDA (profit on operating activities - depreciation) / total assets
+Attr38,0.6937245973404031,6,very strong (check),constant capital / total assets
+Attr8,0.689849999593126,6,very strong (check),book value of equity / total liabilities
+Attr49,0.6888261879939449,5,very strong (check),EBITDA (profit on operating activities - depreciation) / sales
+Attr3,0.6887887925180662,5,very strong (check),working capital / total assets
+Attr17,0.6648722685944226,6,very strong (check),total assets / total liabilities
+Attr51,0.6569847920719287,5,very strong (check),short-term liabilities / total assets
+Attr10,0.6564588900164285,7,very strong (check),equity / total assets
+Attr2,0.648058045154482,7,very strong (check),total liabilities / total assets
+Attr53,0.6338167262445347,6,very strong (check),equity / fixed assets
+Attr63,0.5981937864783625,8,very strong (check),sales / short-term liabilities
+Attr62,0.5851036306645327,8,very strong (check),(short-term liabilities *365) / sales
+Attr57,0.5623213596556085,3,very strong (check),(current assets - inventory - short-term liabilities) / (sales - gross profit - depreciation)
+Attr50,0.5438580969141218,6,very strong (check),current assets / total liabilities
+Attr5,0.5434929877089718,8,very strong (check),[(cash + short-term securities + receivables - short-term liabilities) / (operating expenses - depreciation)] * 365
+Attr30,0.4792177307012846,6,strong,(total liabilities - cash) / sales
+n_missing_ratios,0.462150316837783,3,strong,number of the 64 ratios missing for the firm (data-quality signal)
+Attr40,0.45061506092392256,7,strong,(current assets - inventory - receivables) / short-term liabilities
+Attr32,0.4099927097263037,8,strong,(current liabilities * 365) / cost of products sold
+Attr52,0.3483638265526288,7,strong,(short-term liabilities * 365) / cost of products sold)
+Attr33,0.32816852253418477,7,strong,operating expenses / short-term liabilities
+Attr29,0.31217538914406806,7,strong,logarithm of total assets
+Attr9,0.18003592077706393,3,medium,sales / total assets
+Attr60,0.12296131108969605,3,medium,sales / inventory
+Attr44,0.09993422331438354,5,weak,(receivables * 365) / sales
+Attr61,0.09207904626656227,5,weak,sales / receivables
+Attr43,0.07754271463477455,2,weak,rotation receivables + inventory turnover in days
+Attr47,0.07531255524662119,4,weak,(inventory * 365) / cost of products sold
+Attr64,0.058748419021212805,3,weak,sales / fixed assets
+Attr20,0.05624268477197669,3,weak,(inventory * 365) / sales
+Attr36,0.047380115024887974,4,weak,total sales / total assets
+Attr34,0.045930670400169384,3,weak,operating expenses / total liabilities
+Attr59,0.012689964731025473,2,not predictive,long-term liabilities / equity
